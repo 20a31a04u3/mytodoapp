@@ -1,0 +1,60 @@
+<h3>Update Task</h3>
+
+<form method="POST" action="">
+	{% csrf_token %}
+	<body>Title: </body>{{form.title}}
+	<br>
+	<br>
+	<div class="a">Points: {{form.points}}
+	 Finished: {{form.complete}}</div>
+	<form>
+  
+
+<br>
+	<input type="submit" name="Update Task">
+	
+
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 50px solid #f1f1f1;padding: 50px;}
+
+input[type=text] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 10%;
+
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+.container {
+  padding: 500px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+</style>
